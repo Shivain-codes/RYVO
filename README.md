@@ -34,8 +34,6 @@ See [`IMPLEMENTATION_STATUS.md`](IMPLEMENTATION_STATUS.md) and [`docs/FUNCTIONAL
 
 The original idea for this project is credited to **Chenyun Yang, a CMU student**.
 
-The visual direction was inspired by [Kelvin](https://kelvin.8b.com/). RHYXO uses its own implementation, copy, and visual assets.
-
 ### Run locally
 
 Requires Node.js 22.12+ (or Node.js 24 LTS) and npm.
