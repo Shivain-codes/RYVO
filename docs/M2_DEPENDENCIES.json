@@ -1,0 +1,113 @@
+[
+  {
+    "name": "gsap",
+    "version": "3.15.0",
+    "checkedOn": "2026-10-24",
+    "publishedAt": "2026-04-13T13:15:35.800Z",
+    "registryModifiedAt": "2026-04-13T13:15:35.906Z",
+    "license": "Standard 'no charge' license: https://gsap.com/standard-license.",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/greensock/GSAP.git"
+    }
+  },
+  {
+    "name": "motion",
+    "version": "14.6.0",
+    "checkedOn": "2026-10-24",
+    "publishedAt": "2026-10-22T08:17:20.723Z",
+    "registryModifiedAt": "2026-10-22T08:17:20.959Z",
+    "license": "MIT",
+    "repository": {
+      "url": "git+https://github.com/motiondivision/motion.git",
+      "type": "git"
+    }
+  },
+  {
+    "name": "@fontsource/space-grotesk",
+    "version": "5.3.0",
+    "checkedOn": "2026-10-24",
+    "publishedAt": "2026-07-19T03:46:51.960Z",
+    "registryModifiedAt": "2026-07-19T03:46:52.290Z",
+    "license": "OFL-1.1",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/fontsource/font-files.git",
+      "directory": "fonts/google/space-grotesk"
+    }
+  },
+  {
+    "name": "@fontsource/inter",
+    "version": "5.3.0",
+    "checkedOn": "2026-10-24",
+    "publishedAt": "2026-07-19T03:40:13.819Z",
+    "registryModifiedAt": "2026-07-19T03:40:14.110Z",
+    "license": "OFL-1.1",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/fontsource/font-files.git",
+      "directory": "fonts/google/inter"
+    }
+  },
+  {
+    "name": "@fontsource/jetbrains-mono",
+    "version": "5.3.0",
+    "checkedOn": "2026-10-24",
+    "publishedAt": "2026-07-19T03:40:24.169Z",
+    "registryModifiedAt": "2026-07-19T03:40:24.448Z",
+    "license": "OFL-1.1",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/fontsource/font-files.git",
+      "directory": "fonts/google/jetbrains-mono"
+    }
+  },
+  {
+    "name": "jsdom",
+    "version": "26.1.0",
+    "checkedOn": "2026-10-24",
+    "publishedAt": "2025-04-13T10:23:39.077Z",
+    "registryModifiedAt": "2026-10-15T09:24:39.281Z",
+    "license": "MIT",
+    "repository": {
+      "url": "git+https://github.com/jsdom/jsdom.git",
+      "type": "git"
+    },
+    "engines": {
+      "node": ">=18"
+    }
+  },
+  {
+    "name": "@axe-core/playwright",
+    "version": "4.14.0",
+    "checkedOn": "2026-10-24",
+    "publishedAt": "2026-10-15T13:33:17.706Z",
+    "registryModifiedAt": "2026-10-15T16:39:05.721Z",
+    "license": "MPL-2.0",
+    "repository": {
+      "url": "git+https://github.com/dequelabs/axe-core-npm.git",
+      "type": "git"
+    },
+    "engines": {
+      "node": ">=22.12.0"
+    }
+  },
+  {
+    "name": "@fontsource-variable/hubot-sans",
+    "version": "5.3.0",
+    "checkedOn": "2026-10-24",
+    "publishedAt": "2026-07-19T03:50:22.733Z",
+    "registryModifiedAt": "2026-07-19T03:50:23.048Z",
+    "license": "OFL-1.1",
+    "purpose": "User-authorized Kelvin typography adaptation; self-hosted Latin variable font"
+  },
+  {
+    "name": "@fontsource-variable/kalnia",
+    "version": "5.3.0",
+    "checkedOn": "2026-10-24",
+    "publishedAt": "2026-07-19T03:50:28.565Z",
+    "registryModifiedAt": "2026-07-19T03:50:28.853Z",
+    "license": "OFL-1.1",
+    "purpose": "User-authorized Kelvin typography adaptation; self-hosted Latin variable font"
+  }
+]

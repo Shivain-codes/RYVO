@@ -1,0 +1,28 @@
+{
+  "id": "FEAT-001",
+  "type": "feat",
+  "description": "Create the minimal server-safe Next.js App Router runtime and PULSE visual foundation without implementing any main product feature.",
+  "status": "completed",
+  "steps": [
+    "In /Users/shivain/Desktop/chenyun project, create package.json/package-lock.json and Next.js, TypeScript, Tailwind, ESLint, Vitest, RTL, and Playwright configuration with the exact scripts in implementation-plan.md; preserve the deleted AskMongo baseline.",
+    "Create app/layout.tsx, app/page.tsx, app/globals.css, and the minimal components/pulse/SignalBadge.tsx, Rule.tsx, and index.ts using the semantic PULSE tokens, accessible focus styles, responsive base layout, and reduced-motion rules from docs/DESIGN_SYSTEM.md.",
+    "Keep the root route server-safe and explicitly identify the page as a preparation foundation; do not add product routes, permissions, sensors, audio, database, auth, or server API behavior."
+  ],
+  "acceptance_criteria": [
+    "npm ci, npm run typecheck, npm run lint, and npm run build pass.",
+    "The App Router root renders the PULSE foundation page and has no browser-only imports in server code.",
+    "The visual tokens include semantic color aliases, typography fallbacks, focus-visible treatment, 44px control sizing, responsive behavior, and reduced-motion rules.",
+    "The working tree does not restore the deleted AskMongo Vite/Express/MongoDB files and no secrets or copied Kelvin assets are added.",
+    "No M1-M10 milestone is marked complete and the design verdict remains unchanged."
+  ],
+  "verification": [
+    "Run npm ci.",
+    "Run npm run typecheck.",
+    "Run npm run lint.",
+    "Run npm run build.",
+    "Run npm run dev and verify the root page renders locally without starting Express or MongoDB.",
+    "Run git diff --check and inspect git status --short --branch."
+  ],
+  "blocked_reason": null,
+  "findings": "Implemented the server-safe Next.js App Router foundation, Tailwind v4 semantic token layer, accessible SignalBadge/Rule primitives, runtime-agnostic domain boundaries, Vitest/RTL/Playwright harnesses, and foundation handoff documentation. The root page explicitly identifies the preparation foundation and has no product routes, permissions, sensors, audio, database, auth, or API behavior. The Chromium smoke test now instruments geolocation, media, notification, motion, and orientation permission-capability methods, sets a 320px viewport, enables prefers-reduced-motion, confirms no horizontal overflow, and verifies the reduced-motion stylesheet branch. The design token source is aligned at --pulse-dim #9D939E, with the correction documented against finding F-15; the overall design verdict remains CHANGES_REQUESTED. Verification results: npm ci passed; npm run typecheck passed; npm run lint passed; npm run build passed and emitted only a Next.js warning about an unrelated parent-level package-lock.json outside this repository; npm run dev rendered the root page with A measured beginning. and Foundation ready, with no Express or MongoDB startup output; npm run test:unit -- --run passed 1 test; npm run test:components -- --run passed 1 test; npm run test:integration passed as the documented foundation-only no-op; npx playwright install --with-deps chromium passed; npm run test:e2e -- --project=chromium passed 1 smoke test with capability, responsive, and reduced-motion evidence; npm run pr-check:quick passed; git diff --check passed. Follow-up facts: the existing deleted AskMongo baseline remains deleted, design-verdict.json remains CHANGES_REQUESTED, no M1-M10 milestone was marked complete, and FEAT-002 evidence was updated alongside this fix. eslint@9.39.1 reports an npm deprecation warning during install but does not affect verification."
+}

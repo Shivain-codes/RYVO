@@ -1,0 +1,7 @@
+{
+  "task_id": "task-pulse-preparation",
+  "task_description": "Establish a minimal runnable Next.js foundation and a precise Codex handoff for the planned PULSE product without implementing the main product features.",
+  "status": "pending",
+  "feature_order": ["FEAT-001", "FEAT-002"],
+  "blocked_reason": null
+}

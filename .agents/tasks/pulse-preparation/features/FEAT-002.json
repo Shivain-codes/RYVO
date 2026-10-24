@@ -1,0 +1,29 @@
+{
+  "id": "FEAT-002",
+  "type": "test",
+  "description": "Add runtime-agnostic domain boundary stubs, the foundation unit/component/browser smoke tests, and the documented Codex validation handoff.",
+  "status": "completed",
+  "steps": [
+    "Create src/domain/shared/units.ts, errors.ts, and index.ts plus empty run, sensor, audio, playlist, and simulation boundary barrels; ensure these modules do not import React, Next.js, browser globals, Prisma, or worklet objects.",
+    "Configure vitest.config.ts/vitest.setup.ts, playwright.config.ts, __tests__/domain/shared.test.ts, __tests__/components/signal-badge.test.tsx, and e2e/foundation.spec.ts for deterministic unit, accessible component, and Chromium root smoke coverage without permissions, network, database, audio, or sensor fixtures.",
+    "Add or update README.md and docs/CODEX_HANDOFF.md with the exact target scripts, foundation-only integration-test behavior, modular boundaries, design-gate caveat, and the ordered Codex handoff checks; update FEAT findings with verification evidence after running commands."
+  ],
+  "acceptance_criteria": [
+    "npm run test:unit -- --run, npm run test:components -- --run, npm run test:integration, and npm run test:e2e -- --project=chromium pass.",
+    "npm run pr-check:quick runs the documented typecheck, lint, build, unit, component, and Chromium smoke checks successfully.",
+    "The root smoke test instruments permission-capability methods and confirms no permission-capability call or protected API request, while checking 320px overflow and reduced-motion behavior.",
+    "The domain boundary stubs compile under strict TypeScript and contain no runtime-specific imports.",
+    "The handoff documents state that the main product features remain unimplemented and do not claim CHANGES_REQUESTED is APPROVED."
+  ],
+  "verification": [
+    "Run npm run test:unit -- --run.",
+    "Run npm run test:components -- --run.",
+    "Run npm run test:integration and confirm the foundation-only result is explicit.",
+    "Run npx playwright install --with-deps chromium once per environment.",
+    "Run npm run test:e2e -- --project=chromium.",
+    "Run npm run pr-check:quick.",
+    "Run git diff --check and inspect the final diff for accidental feature implementation or restored AskMongo files."
+  ],
+  "blocked_reason": null,
+  "findings": "Implemented and verified the FEAT-002 foundation boundaries and handoff updates. Runtime-agnostic domain files are present in src/domain/shared plus empty run, sensor, audio, playlist, and simulation barrels; a static scan found no window, navigator, AudioContext, AudioBuffer, Prisma, Next.js, React, or worklet references in src/domain/**/*.ts. Vitest and React Testing Library harnesses cover one deterministic shared-contract unit test and one accessible SignalBadge component test. The Playwright Chromium smoke test uses valid in-page instrumentation for geolocation, media, notification, motion, and orientation permission-capability methods rather than network resource types; it renders the root foundation page, asserts no capability calls or protected API requests, checks no horizontal overflow at 320px, and confirms the prefers-reduced-motion stylesheet branch. README.md and docs/CODEX_HANDOFF.md document the exact scripts, explicit foundation-only integration no-op, module boundaries, ordered Codex handoff checks, device evidence requirements, responsive/reduced-motion evidence, and the unchanged CHANGES_REQUESTED design gate; main product features remain unimplemented. The preparation context and implementation plan now describe the tracked PULSE foundation files and deleted AskMongo baseline accurately. The --pulse-dim token is aligned with DESIGN_SYSTEM.md at #9D939E, and the F-15 correction is documented without changing the overall design verdict. Verification evidence: npm ci passed with the existing eslint@9.39.1 deprecation warning, and npm reported zero vulnerabilities; npm run test:unit -- --run passed 1 test; npm run test:components -- --run passed 1 test; npm run test:integration passed and printed Foundation only: integration tests are deferred until the PostgreSQL milestone.; npx playwright install --with-deps chromium exited 0; npm run test:e2e -- --project=chromium passed 1 Chromium smoke test with capability, responsive, and reduced-motion evidence; npm run pr-check:quick passed typecheck, lint, build, unit, component, and Chromium smoke checks. The build emitted only the existing Next.js warning about a parent-level package-lock.json outside this repository. git diff --check passed. Follow-up facts: the deleted AskMongo baseline files remain deleted, no M1-M10 milestone was marked complete, design-verdict.json remains CHANGES_REQUESTED, and no push was performed."
+}
