@@ -38,7 +38,7 @@ export default function HomePage() {
 
         <section id="product" className="mirage" aria-labelledby="product-title">
           <div className="mirage-echo" aria-hidden="true"><ThermalWord /></div>
-          <div className="shell mirage-body"><h2 id="product-title" data-reveal>Your feet set the tempo.<br />The music finds you.</h2>
+          <div className="shell mirage-body"><h2 id="product-title" data-reveal>Your pace changes. Your music follows.<br />A new connection between the way you move and the music you love.</h2>
             <p className="mirage-copy" data-reveal>Some runs are a slow burn. Others are all instinct. RYVO uses simulated running cadence to create a musical target. Keep your own rhythm. Let the music meet you there.</p>
             <dl className="signal-stats"><div><dt>2</dt><dd>Local audio modes</dd></div><div><dt>3</dt><dd>Beat-to-step ratios</dd></div><div><dt>172</dt><dd>Steps/min in this demo</dd></div><div><dt>0</dt><dd>Permissions to explore</dd></div></dl>
           </div>
