@@ -1,10 +1,12 @@
-# RHYXO — Run to Your Own Rhythm
+# RYVO — Run to Your Own Rhythm
 
 **Your pace changes. Your music follows.**
 
-RHYXO is an adaptive running and music platform designed to synchronize your soundtrack with your movement.
+**Live demo: https://ahyeon.live**
 
-Instead of adjusting your running pace to match a fixed playlist, RHYXO aims to make the music adapt to you.
+RYVO is an adaptive running and music platform designed to synchronize your soundtrack with your movement.
+
+Instead of adjusting your running pace to match a fixed playlist, RYVO aims to make the music adapt to you.
 
 ### Key Features
 
@@ -32,7 +34,7 @@ See [`IMPLEMENTATION_STATUS.md`](IMPLEMENTATION_STATUS.md) and [`docs/FUNCTIONAL
 
 ### Credits
 
-The original idea for this project is credited to **Chenyun Yang, a CMU student**.
+The original idea for this project is credited to **Chenyun Yang, a CMU graduate**.
 
 ### Run locally
 
